@@ -16,4 +16,13 @@ We had previously assisted Steve by creating a Workbook that would allow him to 
 
 ![2018 VBA Data](https://github.com/AnnieShaffer/stock-analysis/blob/master/Resources/VBA_Challenge_2018.png)
 
+### Challenges
+Some of the challenges I encountered during this analysis occurred in writing the code for the macro. When attempting to test the macro to ensure everything ran smoothly, I was receiving and overflow error that I could not figure out. With research I found that I had created a loop for the tickerVolumes that was not needed. This was causing there to be an overflow of information into the return formula. Additionally, I did not initially add the index correctly and had to go back into the code and add it where necessary for the macro to run.
+
 ## Summary
+### What are the advantages or disadvantages or refactoring code?
+One of the advantages of refactoring code is that the code should end up running much faster once it is complete. Additionally, if the program has to run through data a lower number of times, it is able to take in more data. This means that if code is refactored to be more efficient, more data can be inputted without the program crashing or freezing because it is overwhelmed.
+
+A disadvantage of refactoring code is that it takes a lot of time. If I had faced no challenges refactoring this code, it still would have taken more at least an hour to complete. When I ran into challenges it took me several hours over a couple of days to figure out why the code would not run properly. 
+
+### How do these pros and cons apply to refactoring the original VBA script?
