@@ -12,9 +12,14 @@ We had previously assisted Steve by creating a Workbook that would allow him to 
 - In order to assist Steve, I created a Worksheet that includes a table that finds the return of each stock per year. In this table we can see based on conditional formatting added which stocks have a positive rate of return and which stocks have a negative rate of return based on the color of the cell. Positive returns have a green cell and negative returns are colored red. 
 - Based on the data, Steve should recommend that his parents invest in the ENPH and RUN stocks because they are the only two stocks listed that had a positive return in both 2017 and 2018.
 
+![2017 Stock Data](https://github.com/AnnieShaffer/stock-analysis/blob/master/Resources/All_Stocks_2017_Data.png)
+
+![2018 Stock Data](https://github.com/AnnieShaffer/stock-analysis/blob/master/Resources/All_Stocks_2018_Data.png)
+
 ### Refactoring
 - Steve then let us know that he wanted to look at the whole stock market for these two years. To do this, I refactored the initial script so that it would be able to run more data in less time. 
-  - In the original code, we nested the loops to find the total daily volume, starting prices, and endings prices, of each stock. In order to refactor the code I set the index to 0 before going further. Additionally, I created a stand alone loop to set the volume of each stock to zero so that Excel did not have to go back and do it for each loop. I also created the loop so that the loop stayed on one sheet before moving to the next loop and did not have to switch back and forth each time. Together these factors created effieciencies before starting the loop that would find the total volume, starting prices, and ending prices for each stock because they did not have to run as many times. These efficiences were able to run the data in about a tenth of the time.
+- In the original code, we nested the loops to find the total daily volume, starting prices, and endings prices, of each stock. In order to refactor the code I set the index to 0 before going further. Additionally, I created a stand alone loop to set the volume of each stock to zero so that Excel did not have to go back and do it for each loop. I also created the loop so that the loop stayed on one sheet before moving to the next loop and did not have to switch back and forth each time.
+- Together these factors created effieciencies before starting the loop that would find the total volume, starting prices, and ending prices for each stock because they did not have to run as many times. These efficiences were able to run the data in about a tenth of the time.
 
 ![2017 VBA Data](https://github.com/AnnieShaffer/stock-analysis/blob/master/Resources/VBA_Challenge_2017.png)
 
