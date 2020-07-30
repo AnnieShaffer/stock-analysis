@@ -16,11 +16,9 @@ We had previously assisted Steve by creating a Workbook that would allow him to 
 - Steve then let us know that he wanted to look at the whole stock market for these two years. To do this, I refactored the initial script so that it would be able to run more data in less time. 
   - In the original code, we nested the loops to find the total daily volume, starting prices, and endings prices, of each stock. In order to refactor the code I set the index to 0 before going further. Additionally, I created a stand alone loop to set the volume of each stock to zero so that Excel did not have to go back and do it for each loop. I also created the loop so that the loop stayed on one sheet before moving to the next loop and did not have to switch back and forth each time. Together these factors created effieciencies before starting the loop that would find the total volume, starting prices, and ending prices for each stock because they did not have to run as many times. These efficiences were able to run the data in about a tenth of the time.
 
-<div style="text-alighn:center">
 ![2017 VBA Data](https://github.com/AnnieShaffer/stock-analysis/blob/master/Resources/VBA_Challenge_2017.png)
 
 ![2018 VBA Data](https://github.com/AnnieShaffer/stock-analysis/blob/master/Resources/VBA_Challenge_2018.png)
-</div>
 
 ### Challenges
 Some of the challenges I encountered during this analysis occurred in writing the code for the macro. When attempting to test the macro to ensure everything ran smoothly, I was receiving and overflow error that I could not figure out. With research I found that I had created a loop for the tickerVolumes that was not needed. This was causing there to be an overflow of information into the return formula. Additionally, I did not initially add the index correctly and had to go back into the code and add it where necessary for the macro to run.
